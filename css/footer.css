@@ -1,0 +1,16 @@
+footer {
+    padding: 30px;
+}
+
+.footer-section {
+    margin: 10px;
+    text-align: center;
+
+    .icon-footer {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: #1259c3;
+        font-size: 2em;
+    }
+}
+

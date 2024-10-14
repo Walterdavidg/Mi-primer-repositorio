@@ -1,0 +1,45 @@
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+#imagen-logo {
+    width: 50%;
+}
+
+.barra-busqueda {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.compra-en-cuotas {
+    text-align: center;
+}
+
+.menu-navegación {
+    text-align: left;
+    margin-top: 20px;
+    li,
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+}
+
+nav {
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.icono-menu-hamburguesa {
+    text-align: center;
+    background-color: #1259c3;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 3vh;
+}

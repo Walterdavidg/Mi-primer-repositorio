@@ -1,0 +1,74 @@
+.formulario-registro {
+    text-align: center;
+}
+
+.barra-busqueda {
+    text-align: left;
+    border-color: white;
+    border-style: none;
+    border-radius: 2px;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.registro-usuario {
+    text-align: left;
+    border-color: white;
+    border-style: none;
+    border-radius: 2px;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.div-usuario {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.perfil {
+    margin-bottom: 10px;
+    word-spacing: 40px;
+}
+
+.interes {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+.checkbox {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.submit {
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.reset {
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    width: 85%;
+}
+
+.copyright {
+    font-size: 10px;
+    text-align: left;
+}

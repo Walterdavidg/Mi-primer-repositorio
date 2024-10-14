@@ -4,129 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <script src="https://kit.fontawesome.com/7999f7e275.js" crossorigin="anonymous"></script>
     <title>Registro de usuario</title>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <img src="./images/logo-mercado-liebre.svg" alt="logo mercado liebre">
-        <form action="http://127.0.0.1:5500/login.html" method="GET">
-            <input type="text" name="query" placeholder="Buscar..." required>
-            <button type="submit">Buscar</button>
+        <img id="imagen-logo" src="../images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+        <form action="buscar">
+            <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </form>
-        <h1>Comprá en cuotas y sin tarjeta de crédito</h1>
-        <nav>
+        <p class="compra-en-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de
+            crédito</p>
+        <nav class="menu-navegación">
             <ul>
-                <li>Ofertas</li>
-                <li>Tiendas oficiales</li>
-                <li>Vender</li>
-                <li>Ayuda</li>
-                <li>Crea tu cuenta</li>
-                <li>Ingresa</li>
-                <li>Mis compras</li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
             </ul>
+        </nav>
+        <nav class="menu-navegación">
+            <ul>
+                <li><a href="../html/register.html">Crea tu cuenta<i class="fa-solid fa-id-card"></i></a></li>
+                <li><a href="../html/login.html">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <nav>
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars icono-menu-hamburguesa"></i>
+            </div>
         </nav>
     </header>
     <!-- Main -->
     <main>
-        <div>
-            <label for="fullName">Nombre y Apellido:</label>
-            <input type="text" id="fullName" name="fullName" required>
-        </div>
-
-        <div>
-            <label for="username">Nombre de Usuario:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-            <label for="dob">Fecha de Nacimiento:</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
-
-        <div>
-            <label for="address">Domicilio:</label>
-            <input type="text" id="address" name="address" required>
-        </div>
-
-        <div>
-            <label for="profile">Perfil del Usuario:</label>
-            <select name="profile" id="profile" required>
-                <option value="">--Selecciona una opción--</option> <!-- Agregar una opción con valor vacío -->
-                <option value="comprar">Comprar</option>
-                <option value="vender">Vender</option>
-            </select>
-            
-        </div>
-        <div>
-            <label>Categorías de Interés:</label>
+        <section class="formulario-registro">
             <div>
-                <input type="checkbox" id="electro" name="categories" value="Electro">
-                <label for="electro">Electro</label>
+                <input type="text" class="registro-usuario" placeholder="Nombre y Apellido" name="Nombre y Apellido" required>
+            </div>
+
+            <div>
+                
+                <input type="text" class="registro-usuario" placeholder="Usuario" name="Usuario" required>
+            </div>
+
+            <div>
+                
+                <input type="email" class="registro-usuario" placeholder="Email" name="email" required>
+            </div>
+
+            <div class="div-usuario">
+                <label for="fechadenacimiento">Fecha de Nacimiento:</label>
             </div>
             <div>
-                <input type="checkbox" id="moda" name="categories" value="Moda">
-                <label for="moda">Moda</label>
+                <input type="date" class="registro-usuario" placeholder="dob" name="dob" required>
             </div>
-            <div>
-                <input type="checkbox" id="hogar" name="categories" value="Hogar">
-                <label for="hogar">Hogar</label>
-            </div>
-            <div>
-                <input type="checkbox" id="jugueteria" name="categories" value="Juguetería">
-                <label for="jugueteria">Juguetería</label>
-            </div>
-            <div>
-                <input type="checkbox" id="vidasana" name="categories" value="Vida Sana">
-                <label for="vidasana">Vida Sana</label>
-            </div>
-        </div>
 
-        <div>
-            <label for="profilePic">Foto de Usuario:</label>
-            <input type="file" id="profilePic" name="profilePic" accept="image/*">
-        </div>
-
-        <div>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-
-        <div>
-            <label for="confirmPassword">Confirmar Contraseña:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-        </div>
-        <form action="http://127.0.0.1:5500/login.html" method="get">
             <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+                <input type="text" class="registro-usuario" placeholder="Domicilio" name="Domicilio" required>
             </div>
-        </form>
+
+            <div class="div-usuario">
+                <label for="profile">Perfil del Usuario:</label>
+            </div>
+            <div class="perfil">
+                <input type="radio" name="comprador" id="comprador" value="comprador">
+                <label for="comprador">Comprador</label>
+
+                <input type="radio" name="vendedor" id="vendedor" value="venderor">
+                <label for="vendedor">Vendedor</label>
+            </div>
+            <div>
+                <div class="interes">
+                <label>Categorías de Interés</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="electro" name="categories" value="Electro">
+                    <label for="electro">Electro</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="moda" name="categories" value="Moda">
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="hogar" name="categories" value="Hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="jugueteria" name="categories" value="Juguetería">
+                    <label for="jugueteria">Juguetería</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="vidasana" name="categories" value="Vida Sana">
+                    <label for="vidasana">Vida Sana</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="profilePic">Foto de Usuario:</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+            </div>
+
+            <div>
+                
+                <input type="password" class="registro-usuario" placeholder="Contraseña" name="password" required>
+            </div>
+
+            <div>
+                
+                <input type="password" class="registro-usuario" placeholder="Confirmar Contraseña" name="confirmPassword" required>
+            </div>
+            <form action="http://127.0.0.1:5500/login.html" method="get">
+                <div>
+                    <button type="submit" class="submit">Enviar</button>
+                    <button type="reset" class="reset">Borrar</button>
+                </div>
+            </form>
+        </section>
     </main>
     <!-- Footer -->
     <footer>
-        <section>
+        <section class="footer-section">
+            <i class="fa-solid fa-credit-card icon-footer"></i>
             <h3>Pagá con tarjeta o en efectivo</h3>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
                 seguro!</p>
         </section>
-        <section>
+        <section class="footer-section">
+            <i class="fa-solid fa-gift icon-footer"></i>
             <h3>Envío gratis desde $ 2.500</h3>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
                 Mercado Puntos.</p>
         </section>
-        <section>
+        <section class="footer-section">
+            <i class="fa-solid fa-user-shield icon-footer"></i>
             <h3>Seguridad, de principio a fin</h3>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
                 protegid@.</p>
         </section>
-        <div>
+        <div class="copyright">
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </div>
     </footer>
