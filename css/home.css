@@ -9,16 +9,7 @@
 }
 
 body {
-    /* width: 100%; */
-    /* padding: 20px; */
     background-color: #ebebeb;
-    
-    /* main{
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    } */
 }
 
 main {
@@ -33,7 +24,6 @@ main {
 .ultima-visita-ofertas {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 10px; */
     justify-content: center;
 
     .sub-titulo{
@@ -41,18 +31,11 @@ main {
         margin-left: 20px;
         font-size: 24px;
         padding: 10px;
-    
-        
     }
 
     .producto {
-        /* border: 1px solid #ebebeb;
-        padding: 15px; */
         width: 90%;
         background-color: white;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-around; */
         margin-bottom: 10px;
         
         .imagen-producto{
