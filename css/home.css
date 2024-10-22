@@ -5,8 +5,99 @@
     font-size: 12px;
     font-style: normal;
     color: #000000;
+    
+}
+
+body {
+    /* width: 100%; */
+    /* padding: 20px; */
+    background-color: #ebebeb;
+    
+    /* main{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
 }
 
 main {
-    background-color: #ebebeb;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 0 auto; 
 }
+
+
+.ultima-visita-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    justify-content: center;
+
+    .sub-titulo{
+        text-align: start;
+        margin-left: 20px;
+        font-size: 24px;
+        padding: 10px;
+    
+        
+    }
+
+    .producto {
+        /* border: 1px solid #ebebeb;
+        padding: 15px; */
+        width: 90%;
+        background-color: white;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
+        margin-bottom: 10px;
+        
+        .imagen-producto{
+            width: 100%;
+        }
+        .detalles {
+            text-align: start;
+            padding: 15px;
+            background-color: white;
+            border-top: 1px solid #ebebeb;
+            
+            .circulo-camion {
+                width: 40px;
+                height: 40px;
+                border: 1px solid #39b54a;
+                border-radius: 50%;
+                margin: 5px;
+                
+                .camion {
+                    font-size: 15px;
+                    color: #39b54a;
+                    margin: 5px;
+                    
+                    
+                }
+            }
+            .precio{
+                font-size: 18px;
+                margin: 5px;
+                font-weight: bold;
+            } 
+            
+            .descuento {
+                font-size: 16px;
+                margin: 5px;
+                color: #39b54a;
+            }
+            
+            .descripcion {
+                font-size: 16px;
+                margin: 5px;
+            }
+        }
+    }
+
+}
+
+
