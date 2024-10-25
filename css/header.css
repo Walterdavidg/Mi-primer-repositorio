@@ -4,16 +4,46 @@ header {
     width: 100%;
 }
 
+.logo-barra-compra {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #imagen-logo {
     width: 50%;
 }
 
+form {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .barra-busqueda {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    text-align: left;
+    border-color: white;
+    border-style: none;
+    border-radius: 2px 0px 0px 2px;
+    width: 85%;
+    padding: 5x;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+.icono-buscar {
+    width: 15%;
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    border-radius: 0px 2px 2px 0px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .compra-en-cuotas {
+    width: 100%;
     text-align: center;
 }
 
@@ -39,7 +69,17 @@ header {
     margin-top: 3vh;
 }
 
+
+
 @media (min-width: 768px) {
+    #imagen-logo {
+        width: 50%;
+    }
+
+    form {
+    width: 50%;
+    
+}
     .burger-menu {
         display: none;
     }
@@ -62,6 +102,7 @@ header {
 @media (max-width: 767px) {
     .menu-navegación {
         display: none;
+        
     }
 
 } 

@@ -5,7 +5,7 @@
     font-size: 12px;
     font-style: normal;
     color: #000000;
-    
+
 }
 
 body {
@@ -16,71 +16,117 @@ main {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    margin: 0 auto; 
+    justify-content: center;
+    margin: 0 auto;
 }
 
+@media (min-width: 320px) {
+    .producto {
+        width: 100%;
+        /* Un artículo por fila en mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    .producto {
+        width: 43%;
+        /* Dos artículos por fila en tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .producto {
+        width: 20%;
+        /* Cuatro artículos por fila en desktop */
+    }
+}
+
+.banner {
+    width: 100%;
+}
 
 .ultima-visita-ofertas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
 
-    .sub-titulo{
-        text-align: start;
-        margin-left: 20px;
-        font-size: 24px;
-        padding: 10px;
-    }
+.sub-titulo {
+    width: 100%;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 24px;
+    padding: 10px;
+}
 
-    .producto {
-        width: 90%;
-        background-color: white;
-        margin-bottom: 10px;
-        
-        .imagen-producto{
-            width: 100%;
-        }
-        .detalles {
-            text-align: start;
-            padding: 15px;
-            background-color: white;
-            border-top: 1px solid #ebebeb;
-            
-            .circulo-camion {
-                width: 40px;
-                height: 40px;
-                border: 1px solid #39b54a;
-                border-radius: 50%;
-                margin: 5px;
-                
-                .camion {
-                    font-size: 15px;
-                    color: #39b54a;
-                    margin: 5px;
-                    
-                    
-                }
-            }
-            .precio{
-                font-size: 18px;
-                margin: 5px;
-                font-weight: bold;
-            } 
-            
-            .descuento {
-                font-size: 16px;
-                margin: 5px;
-                color: #39b54a;
-            }
-            
-            .descripcion {
-                font-size: 16px;
-                margin: 5px;
-            }
-        }
-    }
+.producto {
+    background-color: white;
+    margin: 23px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen-producto {
+    width: 100%;
+}
+
+.detalles {
+    padding: 15px;
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 
 }
 
+.precio-descuento {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.precio {
+    width: 40%;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.descuento {
+    width: 70%;
+    font-size: 16px;
+    margin: 5px;
+    color: #39b54a;
+}
+
+.circulo-camion {
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.camion {
+    font-size: 15px;
+    color: #39b54a;
+    margin: 5px;
+}
+
+
+.descripcion {
+    width: 100%;
+    font-size: 16px;
+    margin: 5px;
+}
